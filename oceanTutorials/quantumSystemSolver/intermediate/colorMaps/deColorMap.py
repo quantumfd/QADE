@@ -5,7 +5,7 @@ import networkx as nx
 import matplotlib.pyplot as plt
 
 # Represent the map as the nodes and edges of a graph
-provinces = ['AB', 'BC', 'MB', 'NB', 'NL', 'NS', 'NT', 'NU', 'ON', 'PE', 'QC', 'SK', 'YT']
+provinces = ['BW', 'BY', 'B', 'BB', 'HB', 'HH', 'HE', 'MV', 'NI', 'NW', 'RP', 'SL', 'SN', 'ST', 'SH', 'TH']
 neighbors = [('AB', 'BC'), ('AB', 'NT'), ('AB', 'SK'), ('BC', 'NT'), ('BC', 'YT'), ('MB', 'NU'),
              ('MB', 'ON'), ('MB', 'SK'), ('NB', 'NS'), ('NB', 'QC'), ('NL', 'QC'), ('NT', 'NU'),
              ('NT', 'SK'), ('NT', 'YT'), ('ON', 'QC')]
@@ -53,9 +53,9 @@ for neighbor in neighbors:
 bqm = dwavebinarycsp.stitch(csp)
 
 # Set up a solver using the local system’s default D-Wave Cloud Client configuration file
-# and sample 50 times
+# and sample 5 times
 sampler = EmbeddingComposite(DWaveSampler())         # doctest: +SKIP
-response = sampler.sample(bqm, num_reads=50)         # doctest: +SKIP
+response = sampler.sample(bqm, num_reads=10)         # doctest: +SKIP
 
 # Plot the lowest-energy sample if it meets the constraints
 sample = next(response.samples())      # doctest: +SKIP

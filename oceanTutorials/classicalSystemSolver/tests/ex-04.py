@@ -1,10 +1,11 @@
-#!/usr/bin/python3
-# -*- coding : utf -8 -*-
-
 import dwavebinarycsp
-import dwavebinarycsp.factories.constraint.gates as gates
-csp = dwavebinarycsp.ConstraintSatisfactionProblem(dwavebinarycsp.BINARY)
-csp.add_constraint(gates.and_gate(['x1', 'x2', 'y1']))  # add an AND gate
+import dimod 
+
+csp = dwavebinarycsp.factories.random_2in4sat(8,4 ) # 8 variables, 4 clauses
+
 bqm = dwavebinarycsp.stitch(csp)
 
-bqm
+resp = dimod.ExactSolver().sample(bqm)
+
+for sample, energy in resp.data(['sample', 'energy']):
+    print(sample, csp.check(sample), energy)
