@@ -1,10 +1,9 @@
 # QADE
-Quantum Algorithm Development - Project Research 
+Quantum Algorithm Development - Research Project
 
 oceanTutorials - All copyrights rights belong to D-Wave System Inc.
 
 oceanTutorials - includes all the examples on how to use a D-Wave Quantum Computer machine
-
 
 erin - All copyrights belong to Ovidiu-Ionut Michiu/QuantumFD Project
 
