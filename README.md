@@ -20,6 +20,7 @@ The codes are written using the programming language Python, version 3.7 or abov
 Before testing the code, it is adviasible to build a virtual environment where all the dependencies required will be installed. 
 
 Dependencies:
+
 	~ Your PC and connection with D-Wave ~
 	+ build a virtual environment
 	+ install pip (package installer for python)
