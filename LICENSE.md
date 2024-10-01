@@ -1,8 +1,8 @@
 #   Author: Ovidiu-Ionuț Michiu
 
-#   Email: michiu@quantumfd.com
+#   Email: contact@quantumfd.com
 #   Website: www.quantumfd.com
-#   Copyright (C) 2016-2019 by QuantumFD 
+#   Copyright (C) 2016-2024 by QuantumFD 
 #   All rights reserved.
 #   GNU license.
 
